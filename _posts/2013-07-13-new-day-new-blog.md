@@ -1,7 +1,8 @@
 ---
+published: true
 layout: post
-title:  "Everyday a new blog"
-date:   2013-07-13 19:04:22
+title: Everyday a new blog
+date: 2013-07-13T19:04:22.000Z
 categories: jekyll update
 ---
 
