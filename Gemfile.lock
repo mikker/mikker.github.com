@@ -36,5 +36,6 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
+  redcarpet
   stringex
   thor
