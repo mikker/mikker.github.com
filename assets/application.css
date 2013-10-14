@@ -816,23 +816,32 @@ a, a:link {
   text-decoration: none;
 }
 
-/* line 31, ../_assets/application.scss */
-pre {
+/* line 33, ../_assets/application.scss */
+code {
   font-size: .8em;
   background: #f1f1f1;
   padding: 5px;
+}
+
+/* line 39, ../_assets/application.scss */
+pre {
   overflow: auto;
   width: 100%;
   border: 1px solid #ccc;
   border-radius: 3px;
+  background: #f1f1f1;
+}
+/* line 46, ../_assets/application.scss */
+pre code {
+  background: none;
 }
 
-/* line 41, ../_assets/application.scss */
+/* line 51, ../_assets/application.scss */
 code {
   font-family: "Menlo", "Monaco", monospace;
 }
 
-/* line 45, ../_assets/application.scss */
+/* line 55, ../_assets/application.scss */
 .container {
   margin: auto;
   padding: 10px;
@@ -840,7 +849,7 @@ code {
   max-width: 800px;
 }
 
-/* line 52, ../_assets/application.scss */
+/* line 62, ../_assets/application.scss */
 .footer {
   margin-top: 100px;
   border-top: 1px solid #ccc;

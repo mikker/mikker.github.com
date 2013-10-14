@@ -28,14 +28,24 @@ a {
   }
 }
 
-pre {
+$code-background: #f1f1f1;
+
+code {
   font-size: .8em;
-  background: #f1f1f1;
+  background: $code-background;
   padding: 5px;
+}
+
+pre {
   overflow: auto;
   width: 100%;
   border: 1px solid #ccc;
   border-radius: 3px;
+
+  background: $code-background;
+  code {
+    background: none;
+  }
 }
 
 code {
