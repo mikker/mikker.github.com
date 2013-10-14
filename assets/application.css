@@ -811,7 +811,28 @@ body {
   color: #444;
 }
 
-/* line 25, ../_assets/application.scss */
+/* line 26, ../_assets/application.scss */
+a, a:link {
+  text-decoration: none;
+}
+
+/* line 31, ../_assets/application.scss */
+pre {
+  font-size: .8em;
+  background: #f1f1f1;
+  padding: 5px;
+  overflow: auto;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+/* line 41, ../_assets/application.scss */
+code {
+  font-family: "Menlo", "Monaco", monospace;
+}
+
+/* line 45, ../_assets/application.scss */
 .container {
   margin: auto;
   padding: 10px;
@@ -819,18 +840,8 @@ body {
   max-width: 800px;
 }
 
-/* line 32, ../_assets/application.scss */
+/* line 52, ../_assets/application.scss */
 .footer {
   margin-top: 100px;
   border-top: 1px solid #ccc;
-}
-
-/* line 37, ../_assets/application.scss */
-pre {
-  background: #f1f1f1;
-  padding: 5px;
-  overflow: auto;
-  width: 100%;
-  border: 1px solid #eee;
-  border-radius: 3px;
 }
