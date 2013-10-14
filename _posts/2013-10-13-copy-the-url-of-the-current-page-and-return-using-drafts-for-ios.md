@@ -14,4 +14,4 @@ With this bookmarklet in your Favorites folder, it's as easy as tap, tap, tap an
 ```` js
 var a=encodeURI(window.location.href);window.location='drafts://x-callback-url/create?text='+a+'&action=Copy%20to%20Clipboard&x-success='+a;
 ````
-
+[Drafts](https://itunes.apple.com/en/app/drafts/id502385074?mt=8) opens up, copies the url and sends you back to Safari. 
