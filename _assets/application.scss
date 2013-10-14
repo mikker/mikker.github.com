@@ -1,3 +1,5 @@
+@import url(//fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
 @import 'normalize';
 @import 'syntax';
 
@@ -5,8 +7,19 @@
   box-sizing: border-box;
 }
 
+.header h1 {
+  text-align: center;
+}
+
 body {
   background-color: #fff;
+  font-family: "Source Sans Pro", 'Comic Sans', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2em;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialias;
+  color: #444;
 }
 
 .container {
@@ -14,4 +27,18 @@ body {
   padding: 10px;
   width: 100%;
   max-width: 800px;
+}
+
+.footer {
+  margin-top: 100px;
+  border-top: 1px solid #ccc;
+}
+
+pre {
+  background: #f1f1f1;
+  padding: 5px;
+  overflow: auto;
+  width: 100%;
+  border: 1px solid #eee;
+  border-radius: 3px;
 }
