@@ -1,0 +1,17 @@
+@import 'normalize';
+@import 'syntax';
+
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+.container {
+  margin: auto;
+  padding: 10px;
+  width: 100%;
+  max-width: 800px;
+}

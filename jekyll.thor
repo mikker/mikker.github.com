@@ -2,8 +2,24 @@ require "stringex"
 
 class Jekyll < Thor
 
-  desc "new", "create a new post"
+  desc "server", "server"
+  def serve(*args)
+    pids = [
+      spawn("bundle exec jekyll serve -w"),
+      spawn("bundle exec compass watch -c _assets/config.rb"),
+    ]
+  
+    trap "INT" do
+      Process.kill "INT", *pids
+      exit 1
+    end
+  
+    loop do
+      sleep 1
+    end
+  end
 
+  desc "new", "create a new post"
   def new(*title)
     title = title.join(" ")
     date = Time.now.strftime('%Y-%m-%d')
@@ -25,5 +41,6 @@ class Jekyll < Thor
 
     system("$EDITOR #{filename}")
   end
+
 end
 
