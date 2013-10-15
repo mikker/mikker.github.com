@@ -1,4 +1,6 @@
 name: mikker.github.com
+description: A place for releasing stuff and explaining gists
+url: http://mikker.github.io
 # GitHub defaults
 safe: true
 lsi: false
