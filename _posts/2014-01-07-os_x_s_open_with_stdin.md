@@ -22,3 +22,5 @@ fi
 ````
 
 This add a check to open: If the last argument is a dash (-), then use STDIN as the argument to the original `open`.
+
+Put it somewhere that's in your `$PATH` before `/usr/bin` is and you're good!
