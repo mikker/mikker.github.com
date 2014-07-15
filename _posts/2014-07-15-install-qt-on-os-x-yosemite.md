@@ -8,7 +8,7 @@ tags:
 ---
 To install [Qt](http://qt-project.org/) on Yosemite (Beta 3 right now) using [homebrew](http://brew.sh/), just act as if you're on Mavericks and it will work fine:
 
-Edit /usr/local/Library/Homebrew/os/mac/version.rb:
+Edit `/usr/local/Library/Homebrew/os/mac/version.rb`:
 
 ```ruby
 def to_sym
