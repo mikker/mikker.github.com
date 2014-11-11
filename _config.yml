@@ -4,7 +4,7 @@ url: http://mikker.github.io
 # GitHub defaults
 safe: true
 lsi: false
-pygments: true
+highlighter: pygments
 markdown: redcarpet
 permalinks: "/:year/:month/:day/:title/"
 redcarpet:
