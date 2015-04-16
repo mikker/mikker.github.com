@@ -122,6 +122,12 @@ hr {
     list-style-type: none;
     padding: 0;
   }
+
+  li {
+    background: url(/icons/text-document.svg) no-repeat left 7px;
+    background-size: 16px 16px;
+    padding-left: 22px;
+  }
 }
 
 .right { float: right; }

@@ -31,6 +31,9 @@
               </li>
             {% endif %}
           {% endfor %}
+          <li>
+            <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -48,7 +51,7 @@
         {% if site.github_username %}
           <li>
             <a href="https://github.com/{{ site.github_username }}">
-              <img src="/icons/github.svg" alt="github" class="icon">
+              <img src="/icons/github.svg" alt="github" width=16 valign="middle">
               <span class="username">github.com/{{ site.github_username }}</span>
             </a>
           </li>
@@ -56,7 +59,7 @@
         {% if site.twitter_username %}
           <li>
             <a href="https://twitter.com/{{ site.twitter_username }}">
-              <img src="/icons/twitter.svg" alt="twitter" class="icon">
+              <img src="/icons/twitter.svg" alt="twitter" width=16 valign='middle'>
               <span class="username">twitter.com/{{ site.twitter_username }}</span>
             </a>
           </li>
