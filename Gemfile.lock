@@ -124,3 +124,8 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
+  jekyll (~> 2.4.0)
+  jekyll-sass
+  redcarpet
+  stringex
+  thor
