@@ -1,0 +1,12 @@
+# Site settings
+title: mikker.github.io
+email: mikkel@brnbw.com
+description: > # this means to ignore newlines until "baseurl:"
+  It's just text.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://mikker.github.io" # the base hostname & protocol for your site
+twitter_username: mikker
+github_username:  mikker
+
+# Build settings
+markdown: redcarpet

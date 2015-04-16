@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="post">
+
+  <header class='post-header'>
+    <h1>
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        {{ page.title }}
+      </a>
+    </h1>
+    <p class="post-meta">
+      <a href="{{ post.url | prepend: site.baseurl }}">
+        {{ page.date | date: "%b %-d, %Y" }}
+      </a>
+      {% if page.author %} • {{ page.author }}{% endif %}
+      {% if page.meta %} • {{ page.meta }}{% endif %}
+    </p>
+  </header>
+
+  <article class="post-content">
+    {{ content }}
+  </article>
+
+</article>

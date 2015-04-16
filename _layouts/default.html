@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ site.description }}">
+
+    <link rel="stylesheet" href="{{ "/css/looks.css" | prepend: site.baseurl }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  </head>
+  <body>
+    <header class="page-header">
+      <h1>
+        <a class="site-title" href="{{ site.baseurl }}/">
+          {{ site.title }}
+        </a>
+      </h1>
+      &bullet;
+      <nav class='page-navigation'>
+        <ul>
+          <li><a href='/'>Posts</a></li>
+          {% for page in site.pages %}
+            {% if page.title %}
+              <li>
+                <a href="{{ page.url | prepend: site.baseurl }}">
+                  {{ page.title }}
+                </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </nav>
+    </header>
+
+    <div class="page-content">
+      {{ content }}
+    </div>
+
+    <footer class="page-footer">
+      <hr>
+      <p>
+        by <a href='http://mikkelmalmberg.dk'>Mikkel Malmberg</a><br />
+      </p>
+      <ul>
+        {% if site.github_username %}
+          <li>
+            <a href="https://github.com/{{ site.github_username }}">
+              <img src="/icons/github.svg" alt="github" class="icon">
+              <span class="username">github.com/{{ site.github_username }}</span>
+            </a>
+          </li>
+        {% endif %}
+        {% if site.twitter_username %}
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <img src="/icons/twitter.svg" alt="twitter" class="icon">
+              <span class="username">twitter.com/{{ site.twitter_username }}</span>
+            </a>
+          </li>
+        {% endif %}
+      </ul>
+    </footer>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-267999-38', 'mikker.github.io');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
+
