@@ -6,6 +6,18 @@ tags:
 - ubuntu
 ---
 
+**Update 2015-05-12:** Seems the correct file to edit is `/etc/default/locale`:
+
+```sh
+export LANGUAGE="en_US.UTF-8"
+echo 'LANGUAGE="en_US.UTF-8"' >> /etc/default/locale
+echo 'LC_ALL="en_US.UTF-8"' >> /etc/default/locale
+```
+
+Then reboot.
+
+---
+
 I'm really digging [dokku-alt](https://github.com/dokku-alt/dokku-alt "dokku-alt/dokku-alt"). Dokku is a simple way of setting up a deployment setup as easy as Heroku's. Dokku-alt is that plus some bundled plugins.
 
 I had some troubles though with the Postgresql databases being created with ASCII encodings. So before you install and setup dokku get your locales in order - make your `/etc/locales` look like:
