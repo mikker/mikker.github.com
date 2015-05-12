@@ -1,5 +1,6 @@
 ---
 title: Force-update text shortcuts in OS X Yosemite
+layout: post
 tags:
   - yosemite
   - osx
