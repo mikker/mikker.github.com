@@ -11,6 +11,8 @@ tags:
 
 Phoenix uses [Brunch][] to build it's assets so we'll have to pull that out and jam in a [webpack-dev-server][] wherever it was. Luckily that's quite easy.
 
+**The completed example is [available on Github][]**.
+
 First, let's create a new app:
 
 ```sh
@@ -195,3 +197,4 @@ And we're done! Now go open `http://localhost:4000`, edit `App.js` and behold th
 [Brunch]: http://brunch.io
 [josevalim]: http://twitter.com/josevalim
 [webpack-dev-server]: http://webpack.github.io/docs/webpack-dev-server.html
+[available on Github]: http://github.com/mikker/phoenix-react-hot-loader "mikker/phoenix-react-hot-loader"
