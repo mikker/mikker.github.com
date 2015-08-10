@@ -191,6 +191,38 @@ The only thing left is the element with id `root`. Let's put it in `web/template
 
 And we're done! Now go open `http://localhost:4000`, edit `App.js` and behold the magic of our hot reloading gods!
 
+### <a href="#production" name='production'>Addendum: Production</a>
+
+Phoenix compiles all it's assets with the task `phoenix.digest` which you're supposed to run before deploying. We can just remember to run `webpack` beforehand &mdash; or we can make our own digest task.
+
+Here's `lib/mix/tasks/digest.ex`:
+
+```elixir
+defmodule Mix.Tasks.Voter.Digest do
+  use Mix.Task
+
+  def run(args) do
+    Mix.Shell.IO.cmd "./node_modules/webpack/bin/webpack.js"
+    :ok = Mix.Tasks.Phoenix.Digest.run(args)
+  end
+end
+```
+
+Let's be fancy and override the original task so new developers or deployment scripts don't need to know about our special setup. Open `mix.exs` and alias the original to our new task:
+
+```elixir
+defmodule MyApp.Mixfile do
+  # ...
+  def project do
+    [ # ...
+      aliases: ["phoenix.digest": "my_app.digest"]]
+  end
+  # ...
+end
+```
+
+Try `mix phoenix.digest` and see that webpack runs first.
+
 [Phoenix]: http://www.phoenixframework.org
 [React]: https://github.com/facebook/react
 [react-hot-loader]: https://gaearon.github.io/react-hot-loader/
