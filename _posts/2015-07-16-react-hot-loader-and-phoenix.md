@@ -198,7 +198,7 @@ Phoenix compiles all it's assets with the task `phoenix.digest` which you're sup
 Here's `lib/mix/tasks/digest.ex`:
 
 ```elixir
-defmodule Mix.Tasks.Voter.Digest do
+defmodule Mix.Tasks.MyApp.Digest do
   use Mix.Task
 
   def run(args) do
