@@ -20,9 +20,17 @@ $ git clone https://github.com/Homebrew/homebrew.git /Users/Shared/Developer
 Now, that directory's `bin` directory isn't in your `$PATH` (like `/usr/local/bin` is automatically) so we need to add it. Open up `~/.bashrc` or `~/.zshrc` -- whatever your preference -- and add this:
 
 ```sh
-export PATH="/Users/Shared/Developer/bin:$PATH"
+export BREW_PATH=/Users/Shared/Developer
+export PATH="$BREW_PATH/bin:$PATH"
 ```
 
 Done. Run `brew doctor` to confirm.
+
+### Install `taglib-ruby` gem with Homebrew outside `/usr/local`
+
+```sh
+$ brew install taglib
+$ gem install taglib-ruby -- --with-tag-dir=$BREW_PATH/Cellar/taglib/1.9.1/
+```
 
 [homebrew]: http://brew.sh "Homebrew"
