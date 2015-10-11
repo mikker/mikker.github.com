@@ -5,6 +5,11 @@ tags:
   - os x
   - el capitan
 ---
+
+**UPDATE 2015-10-11:** Turns out, on a clean install `/usr/local` is still writable &ndash; even with SIP turned on.
+
+---
+
 I've been running the beta of OS X 10.11 _El Capitan_ for some months and there've been very few hiccups. So full sail ahead on the update I say.
 
 Upgrading to the GM broke my [homebrew][] though. I think the days of using `/usr/local` might be over as El Capitan does some stuff to enforce even stricter permissions than a simple `chown` can get rid of.
