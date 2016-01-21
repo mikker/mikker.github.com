@@ -17,7 +17,7 @@ First we need to have a version of 9.4 installed.
 
 ```sh
 # move 9.5 out of the way
-# - don't worry - your data will not be touched
+# - don't worry - your data will not be removed
 $ brew uninstall postgres
 
 # the last version of the postgres bottle with 9.4
