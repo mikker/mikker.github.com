@@ -17,6 +17,7 @@ First we need to have a version of 9.4 installed.
 
 ```sh
 # move 9.5 out of the way
+# - don't worry - your data will not be touched
 $ brew uninstall postgres
 
 # the last version of the postgres bottle with 9.4
@@ -33,7 +34,6 @@ Now we can follow [Keita's instructions](https://kkob.us/2016/01/09/homebrew-and
 
 ```sh
 # initialize a new 9.5 db
-# - don't worry - your data will not be touched
 $ initdb /usr/local/var/postgres9.5 -E utf8
 
 # upgrade our data
