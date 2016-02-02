@@ -9,7 +9,7 @@ twitter_username: mikker
 github_username:  mikker
 
 # Build settings
-markdown: redcarpet
-redcarpet:
+markdown: kramdown
+kramdown:
   extensions:
     - "smart"
