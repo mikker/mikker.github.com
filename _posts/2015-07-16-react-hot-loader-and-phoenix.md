@@ -7,6 +7,9 @@ tags:
   - react
   - webpack
 ---
+**NB: Here's and [updated setup](/2016/02/04/updated-phoenix-webpack-react-setup.html).**
+
+
 [Phoenix][] has built-in livereload and it works right out of the box. But if you've ever had the joy of working with [React][] and [react-hot-loader][] you know you need to have that with you anywhere.
 
 Phoenix uses [Brunch][] to build it's assets so we'll have to pull that out and jam in a [webpack-dev-server][] wherever it was. Luckily that's quite easy.

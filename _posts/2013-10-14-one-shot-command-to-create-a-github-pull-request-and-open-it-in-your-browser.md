@@ -9,10 +9,10 @@ At [Firmafon][] we almost always concentrate updates into [Github][]'s pull reqe
 
 The first one's called `last_commit_message`:
 
-````sh
+```
 #!/bin/sh
 git --no-pager log -1 --pretty=%B | sed -e "s/^ *//g" -e "s/ *$//g" | tr -d "\n"
-````
+```
 
 This outputs the last commit's message, inline without anything else but the message.
 
