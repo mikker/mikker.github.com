@@ -166,6 +166,12 @@ And finally add this to the bottom of `web/templates/layout/app.html.eex`:
 <% end %>
 ```
 
+And `web/templates/page/index.html.eex` is just:
+
+```html
+<div id='root'></div>
+```
+
 ### Building for production
 
 Add `lib/mix/tasks/digest.ex`:
