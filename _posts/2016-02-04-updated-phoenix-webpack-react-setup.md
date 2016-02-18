@@ -133,6 +133,19 @@ Allow it to be executed:
 $ chmod +x webpack.dev.js
 ```
 
+Babel 6 needs a `.babelrc` so let's add it:
+
+```json
+{
+  "presets": ["es2015", "react", "stage-0"],
+  "env": {
+    "development": {
+      "presets": ["react-hmre"]
+    }
+  }
+}
+```
+
 Make your app run that script as a watcher in `dev`. `config/dev.exs`:
 
 ```elixir
