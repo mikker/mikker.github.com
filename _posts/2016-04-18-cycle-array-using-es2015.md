@@ -14,6 +14,12 @@ function cycle (...args) {
 }
 ```
 
+You could even write it even shorter:
+
+```js
+const cycle = (...args) => (i) => args[i % args.length]
+```
+
 Use it in React like this:
 
 ```js
