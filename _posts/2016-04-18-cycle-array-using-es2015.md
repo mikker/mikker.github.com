@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cycle array using ES2015
+title: Cycle an array using ES2015
 tags:
 - javascript
 ---
