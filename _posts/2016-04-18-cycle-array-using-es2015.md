@@ -14,7 +14,7 @@ function cycle (...args) {
 }
 ```
 
-You could even write it even shorter:
+And we can still make it shorter:
 
 ```js
 const cycle = (...args) => (i) => args[i % args.length]
