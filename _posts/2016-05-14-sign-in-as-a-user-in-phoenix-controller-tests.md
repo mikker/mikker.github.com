@@ -23,7 +23,7 @@ end
 To have it available in all your `ConnCase`s put it in `test/support/conn_case.ex`.
 
 ```elixir
-defmodule Tier.ConnCase do
+defmodule MyApp.ConnCase do
   # ...
   using do
     quote do
