@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Read marks with Ecto and Phoenix
+date: 2016-09-29 14:00
 tags:
   - ecto
   - phoenix
