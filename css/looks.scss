@@ -3,13 +3,13 @@
 ---
 @charset "utf-8";
 
-@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700|Noticia+Text:400,400italic,700,700italic|Domine:400,700);
+@import url(//fonts.googleapis.com/css?family=Inconsolata:400,700|Noticia+Text:400,400italic,700,700italic|Domine:400,700);
 
 $georgia: "Georgia", serif;
 $helvetica: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
 $font-family: "Noticia Text", $georgia;
-$header-font-family: "Domine", $helvetica;
+$header-font-family: "Domine", $georgia;
 $mono-font-family: "Inconsolata", monospace;
 
 @import 'normalize';
