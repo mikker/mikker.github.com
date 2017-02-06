@@ -5,7 +5,7 @@ tags:
 - vim
 - vim-plug
 ---
-If you're using vim (you should) and vim-plug for plugins (you should) and you have seom plugins locally (you might) but still want your setup to be portable (you should) then you might want to only load plugins locally if they exist (here's how).
+If you're using vim (you should) and vim-plug for plugins (you should) and you have some plugins locally (you might) but still want your setup to be portable (you should) then you might want to only load plugins locally if they exist (here's how).
 
 ```vim
 function! s:maybeLocalPlug(args)
