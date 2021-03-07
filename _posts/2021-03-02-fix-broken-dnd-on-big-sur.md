@@ -12,8 +12,7 @@ Thanks to [this Reddit comment](https://www.reddit.com/r/MacOS/comments/kcvdn4/c
 Use this one liner to set it to false:
 
 ```bash
-for f in `ls ~/Library/Preferences/ByHost/com.apple.notificationcenterui.*.plist`; do defaults write $f doNotDisturb 0; done &
-& killall NotificationCenter
+for f in `ls ~/Library/Preferences/ByHost/com.apple.notificationcenterui.*.plist`; do defaults write $f doNotDisturb 0; done && killall NotificationCenter
 ```
 
 Aaah, the overwhelming feeling of drowning in notifications is back.
